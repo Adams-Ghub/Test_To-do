@@ -11,8 +11,6 @@ export const addTask = (tasks, description) => {
 
 export const updateList = (id, tasks) => {
   const theElement = document.getElementById(id);
-  const del = document.getElementById(`del${id}`);
-  const menu = document.getElementById(`menu${id}`);
   let info = theElement.textContent;
   const data = tasks;
   theElement.addEventListener('input', (e) => {

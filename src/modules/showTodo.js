@@ -1,7 +1,7 @@
 import { delTodo, updateList } from './Functionalities.js';
 import { updateCompleteTodo } from './status.js';
 
-const showTodo = (data, list, divtwo) => {
+const showTodo = ({ data, list, divtwo }) => {
   for (let i = 0; i < data.length; i++) {
     const div = document.createElement('div');
     const listInput = document.createElement('label');

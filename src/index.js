@@ -40,5 +40,6 @@ domElements.clear.addEventListener('click', (e) => {
 });
 
 window.addEventListener('load', () => {
-  showTodo(DATA, domElements.todoList, domElements.divtwo);
+  const info = { data: DATA, list: domElements.todoList, divtwo: domElements.divtwo }
+  showTodo(info);
 });
